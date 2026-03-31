@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<div class="logo-title">
+    <img src="https://play-lh.googleusercontent.com/Mpgcwfyola1aA3hxBAMPE7R7df9KSHEBV-wDYtbv4N--mZtJDoQTitm1wFZa1thj36Mu=w240-h480-rw" class="logo">
+    <h2>Sarhad Dimension</h2>
+</div>
+</header>
+
+<div class="form-container">
+
+<h2>Register</h2>
+
+<form id="registrationForm">
+
+<input type="text" id="name" placeholder="Full Name" required>
+<input type="text" id="college" placeholder="Class / Course" required>
+<input type="tel" id="phone" placeholder="Phone Number" required>
+
+<select id="event" required>
+<option value="">Select Event</option>
+<option>Squid Game</option>
+<option>Seminar Workshop</option>
+<option>AI Generated Photography</option>
+<option>BGMI</option>
+<option>Doodle Arts</option>
+<option>Kon Banega Best Seller (stalls)</option>
+
+</select>
+
+<select id="paymentMethod" required>
+<option value="">Select Payment Method</option>
+<option value="UPI">UPI</option>
+<option value="Cash">Cash</option>
+</select>
+
+<button type="submit">Submit</button>
+
+</form>
+
+<!-- ✅ ADD THIS HERE -->
+<div id="qrBox" style="display:none; text-align:center; margin-top:20px;">
+    <h3>Scan to Pay</h3>
+    <img id="qrImage" width="200">
+</div>
+
+</div>
+
+<script type="module" src="script.js"></script>
+
+</body>
+</html>
